@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    article p {
+      color: red;
+    }
+
+    article > p {
+      color: blue;
+    }
+
+    p ~ section {
+      color: green;
+    }
+
+    section + p {
+      color: orange;
+    }
+  </style>
+    </head>
+    <body>
+    <article>
+    <h1>H1 태그 입니다.</h1>
+    <p>첫번째 p</p>
+    <p>두번째 p</p>
+    <div>
+      <p>디브 p 1</p>
+      <h2>H2 태그</h2>
+      <section>섹션 영역 1</section>
+      <h3>H3 태그</h3>
+      <p>디브 p 2</p>
+      <div>
+        <section>디브 섹션 영역</section>
+      </div>
+    </div>
+    <section>섹션 영역 2</section>
+    <p>세번째 p</p>
+  </article>
+  </body>>
+  </html>
