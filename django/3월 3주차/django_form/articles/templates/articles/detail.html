@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>TITLE : {{ article.title }}</p>
+<p>CONTENT : {{ article.content }}</p>
+<hr>
+<a href="{% url 'articles:index' %}">BACK</a>
+<a href="{% url 'articles:edit' article.pk %}">EDIT</a>
+<form action="{% url 'articles:delete' article.pk %}" method="POST">
+  {% csrf_token %}
+  <button>DELETE</button>
+</form>
+{% endblock  %}
