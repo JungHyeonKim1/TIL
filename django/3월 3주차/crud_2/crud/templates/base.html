@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  {% load static %}
+  {% block css %}
+    <link rel="stylesheet" href={% static 'articles/css/bootstrap.css' %}>
+  {% endblock css %}
+  {% block js %}
+    <link rel="stylesheet" href={% static 'articles/js/bootstrap.bundle.js' %}>
+  {% endblock js %}
+</head>
+<body>
+  <h1>CRUD with ModelForm</h1>
+  <hr>
+  {% block content %}
+  {% endblock  %}
+</body>
+</html>
