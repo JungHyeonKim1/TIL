@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% comment %} {% extends 'base.html' %}
+
+{% block content %}
+<h1>로그인</h1>
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit">
+</form>
+{% endblock %} {% endcomment %}
+
+{% block content %}
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button>로그인</button>
+</form>
+{% endblock %}
